@@ -32,7 +32,7 @@ public class AccountController extends BaseController {
 
     @GetMapping("auth/check")
     public String check() {
-        return "hello";
+        return "hello  ";
     }
 
     @GetMapping("auth/loginSocial")
