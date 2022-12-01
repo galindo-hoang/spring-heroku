@@ -30,6 +30,11 @@ public class AccountController extends BaseController {
     private final RoomMapper roomMapper;
     private final RoomService roomService;
 
+    @GetMapping("auth/check")
+    public String check() {
+        return "hello";
+    }
+
     @GetMapping("auth/loginSocial")
     public ResponseEntity<AuthenticationDto> authentication(OAuth2AuthenticationToken oAuth2AuthenticationToken) {
         System.out.println(oAuth2AuthenticationToken);
